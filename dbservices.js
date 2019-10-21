@@ -14,11 +14,9 @@ createCollection = function(name){
       });
 }
 
-
-
-
+//insert document
 exports.insertDB = function(collection, obj){
-    MongoClient.connect(url, function(err, dbconn) {
+    MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true }, function(err, dbconn) {
         if (err) throw err;
         //creating collection
         var db = dbconn.db(conn.dbname);
@@ -28,3 +26,9 @@ exports.insertDB = function(collection, obj){
           });
     });
 }
+
+//select documents
+
+//update documents
+
+//delete documents
