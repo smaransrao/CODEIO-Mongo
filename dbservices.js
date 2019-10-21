@@ -15,8 +15,6 @@ createCollection = function(name){
 }
 
 
-
-
 exports.insertDB = function(collection, obj){
     MongoClient.connect(url, function(err, dbconn) {
         if (err) throw err;

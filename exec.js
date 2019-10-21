@@ -1,4 +1,4 @@
 var db = require('./dbservices')
 
-obj = {test: 222};
-db.insertDB("institutions", obj);
+obj = {test: 2222};
+db.insertDB("details", obj);
